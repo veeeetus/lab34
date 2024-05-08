@@ -100,38 +100,38 @@ git checkout -b feature
 git push
 git branch -f main c1
 # 2.1
-git fetch;
-git rebase o/main side1;
-git rebase side1 side2;
-git rebase side2 side3;
-git rebase side3 main;
-git push;
+git fetch
+git rebase o/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
 # 2.2
-git switch main;
-git pull;
-git merge side1;
-git merge side2;
-git merge side3;
-git push;
+git switch main
+git pull
+git merge side1
+git merge side2
+git merge side3
+git push
 # 2.3
-git checkout -b side o/main;
-git commit;
-git pull --rebase;
-git push;
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
 # 2.4
-git push origin main;
-git push origin foo;
+git push origin main
+git push origin foo
 # 2.5
-git push origin main~1:foo;
-git push origin foo:main;
+git push origin main~1:foo
+git push origin foo:main
 # 2.6
-git fetch origin c3:foo;
-git fetch origin c6:main;
-git checkout foo;
-git merge main;
+git fetch origin c3:foo
+git fetch origin c6:main
+git checkout foo
+git merge main
 # 2.7
-git push origin :foo;
-git fetch origin :bar;
+git push origin :foo
+git fetch origin :bar
 # 2.8
-git pull origin c3:foo;
-git pull origin c2:side;
+git pull origin c3:foo
+git pull origin c2:side
